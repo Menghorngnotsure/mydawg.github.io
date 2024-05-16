@@ -193,24 +193,25 @@
             background-color: #0056b3;
             color: #fff;
         }
-image-row {
-    width: 10px;
-    flex: 1;
-    height: 10;
-    display: block;
-    margin-right: 5px;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; 
-}
-@media (max-width: 768px) {
-    .image-row {
-        flex-direction: column; /* Stacks images vertically on smaller screens */
+            .image-row {
+            display: flex;
+        }
+        
+        .image-row img {
+            flex: 1;
+            width: 10px; 
+            height: 10; 
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .image-row {
+        flex-direction: column;
     }
 }
-image:hover {
-    transform: scale(1.05);
-}
+        image:hover {
+            transform: scale(1.05);
+        }
         </style>
     </head>
 <body>
